@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивний кошик</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 class="title">Наші товари</h1>
+    
+    <div class="product-container">
+        <div class="product">
+            <img src="https://cdn0.it4profit.com/s3size/rt:fill/w:0/h:0/g:no/el:1/f:webp/plain/s3://cms/category/e4/9b/e49b734e842b680977060bdfa0e7e0c1/frame_2087328917.webp" alt="Смартфон" class="product-image">
+            <h3>Смартфон</h3>
+            <p>Сучасний смартфон з високоякісною камерою, швидким процесором та величезним екраном. Ідеальний вибір для любителів технологій.</p>
+            <p>Ціна: 48999 грн</p>
+            <button class="add-to-cart" data-id="1" data-name="Смартфон" data-price="48999" data-image="https://cdn0.it4profit.com/s3size/rt:fill/w:0/h:0/g:no/el:1/f:webp/plain/s3://cms/category/e4/9b/e49b734e842b680977060bdfa0e7e0c1/frame_2087328917.webp">Додати у кошик</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://ipac31.ru/image/cache/data/product/mac/Macbook%20Air%20M2/macbook-air-m2-starlight-2-700x700.png" alt="Ноутбук" class="product-image">
+            <h3>Ноутбук</h3>
+            <p>Ноутбук з високопродуктивним процесором та великою пам'яттю. Ідеальний для роботи та іг.</p>
+            <p>Ціна: 57990 грн</p>
+            <button class="add-to-cart" data-id="2" data-name="Ноутбук" data-price="57990" data-image="https://ipac31.ru/image/cache/data/product/mac/Macbook%20Air%20M2/macbook-air-m2-starlight-2-700x700.png">Додати у кошик</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShguNji6oMp0-jhvXqH2c21MrIim2zDVY9ow&s" alt="Гарнітура" class="product-image">
+            <h3>Гарнітура</h3>
+            <p>Комфортна гарнітура з високоякісним звуком та шумозаглушенням. Ідеальна для ігор та відеооглядів.</p>
+            <p>Ціна: 7690 грн</p>
+            <button class="add-to-cart" data-id="3" data-name="Гарнітура" data-price="7690" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShguNji6oMp0-jhvXqH2c21MrIim2zDVY9ow&s">Додати у кошик</button>
+        </div>
+    </div>
+    
+    <button class="cart-btn">
+        <span class="cart-icon">🛒</span>
+        Перегляд кошика
+        <span class="cart-count">0</span>
+    </button>
+    
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Ваш кошик</h2>
+                <button class="close-btn" id="closeCart">✕</button>
+            </div>
+            
+            <div class="cart-items" id="cartItems">
+                <p id="emptyCart">Ваш кошик порожній</p>
+            </div>
+            
+            <div class="cart-total" id="cartTotal">
+                Загалом: 0 грн
+            </div>
+            
+            <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
